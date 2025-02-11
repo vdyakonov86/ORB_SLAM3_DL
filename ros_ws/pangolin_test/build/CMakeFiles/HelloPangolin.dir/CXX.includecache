@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/ros_ws/pangolin_test/main.cpp
+pangolin/display/display.h
+-
+pangolin/display/view.h
+-
+pangolin/handler/handler.h
+-
+pangolin/gl/gldraw.h
+-
+
