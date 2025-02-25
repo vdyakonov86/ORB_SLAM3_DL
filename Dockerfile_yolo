@@ -59,7 +59,8 @@ WORKDIR /ultralytics
 
 # Copy contents and configure git
 COPY ultralytics .
-RUN sed -i '/^\[http "https:\/\/github\.com\/"\]/,+1d' .git/config
+# throws error: in my case ultralytics is submodule
+# RUN sed -i '/^\[http "https:\/\/github\.com\/"\]/,+1d' .git/config
 ADD https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt .
 
 # Install pip packages
@@ -77,7 +78,8 @@ RUN rm -rf tmp /root/.config/Ultralytics/persistent_cache.json
 
 WORKDIR /
 
-# RUN pip install numpy vispy matplotlib pandas opencv-python scipy ipython ipykernel
+# jupyter
+RUN pip install ipython ipykernel
 
 # switch from root to user
 USER $USERNAME
