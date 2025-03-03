@@ -86,9 +86,9 @@ RUN apt-get install -y cmake  g++
 RUN apt-get install -y libgtk2.0-dev pkg-config
 
 # download and unpack sources
-RUN wget -O opencv.zip https://github.com/opencv/opencv/archive/4.4.0.zip \
+RUN wget -O opencv.zip https://github.com/opencv/opencv/archive/4.8.0.zip \
     && unzip opencv.zip \
-    && mv opencv-4.4.0 opencv \
+    && mv opencv-4.8.0 opencv \
     && rm opencv.zip
 
 # build
@@ -154,7 +154,7 @@ RUN wget -O eigen.zip https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.
 RUN sudo apt-get update && sudo apt-get install -y libboost-dev libboost-serialization-dev && rm -rf /var/lib/apt/lists/* 
 
 # TODO: move to the yolo section
-RUN apt-get install numpy
+RUN pip install numpy
 
 # orbslam build script
 RUN mkdir /scripts 
