@@ -4,3 +4,6 @@
 [submodule "ultralytics"]
 	path = ultralytics
 	url = git@github.com:ultralytics/ultralytics.git
+[submodule "yolo-inference"]
+	path = yolo-inference
+	url = git@github.com:taifyang/yolo-inference.git
