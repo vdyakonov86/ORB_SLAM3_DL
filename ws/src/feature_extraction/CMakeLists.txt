@@ -1,19 +1,17 @@
 cmake_minimum_required( VERSION 3.1 )
-project( orb_yolo )
+project( featureExtraction )
 
-# set( CMAKE_BUILD_TYPE "Release" )
-# set( CMAKE_CXX_FLAGS "-std=c++14 -O3" )
+find_package(OpenCV 4.8.0 REQUIRED)
+add_subdirectory(yolo-inference)
 
-find_package( OpenCV 4.8.0 REQUIRED )
+add_executable(feature_extraction feature_extraction.cpp)
+target_link_libraries(feature_extraction PUBLIC ${OpenCV_LIBS} yoloInference)
 
-include_directories( 
-    ${OpenCV_INCLUDE_DIRS} 
+target_include_directories(feature_extraction PUBLIC
+    ${OpenCV_INCLUDE_DIRS}
     ${G2O_INCLUDE_DIRS}
     ${CSPARSE_INCLUDE_DIR}
     "/usr/include/eigen3/"
-    "/dl_ws/src/yolo-inference"
+    "${PROJECT_BINARY_DIR}"
+    "${PROJECT_SOURCE_DIR}/yolo-inference/include"
 )
-add_library(yolo-inference)
-
-add_executable( feature_extraction feature_extraction.cpp  )
-target_link_libraries( feature_extraction ${OpenCV_LIBS} yolo-inference)
