@@ -1,3 +1,0 @@
-/ros_ws/build/CMakeFiles/rebuild_cache.dir
-/ros_ws/build/CMakeFiles/edit_cache.dir
-/ros_ws/build/CMakeFiles/opencv_test.dir
