@@ -15,6 +15,17 @@
 #include <opencv2/opencv.hpp>
 
 /**
+ * @description: segmentation network output related parameters
+ */
+struct OutputSeg
+{
+	int id;             //class id
+	float score;   		//score
+	cv::Rect box;       //bounding box
+	cv::Mat mask;    	//mask
+};
+
+/**
  * @description: backend type
  */
 enum Backend_Type
@@ -106,6 +117,11 @@ public:
 	 * @return {*}
 	 */
 	virtual void release() {};
+
+	/**
+	 * @description: segmentation model output
+	 */
+	std::vector<OutputSeg> m_output_seg;
 
 protected:
 	/**

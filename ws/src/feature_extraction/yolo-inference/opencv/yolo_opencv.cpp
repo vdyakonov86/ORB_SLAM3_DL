@@ -278,6 +278,7 @@ void YOLO_OpenCV_Segment::post_process()
 	std::vector<int> class_ids;
 	std::vector<std::vector<float>> picked_proposals;
 
+	std::cout << "m_output_host: " << m_output_host << std::endl;
 	for (int i = 0; i < m_output_numbox; ++i)
 	{
 		float* ptr = m_output_host + i * m_output_numprob;
@@ -316,6 +317,7 @@ void YOLO_OpenCV_Segment::post_process()
 		boxes.push_back(box);
 		scores.push_back(score);
 		class_ids.push_back(class_id);
+		std::cout << "class_id: " << class_id << " score: " << score << std::endl;
 
 		if (m_algo_type == YOLOv5)
 		{
@@ -331,6 +333,7 @@ void YOLO_OpenCV_Segment::post_process()
 
 	std::vector<int> indices;
 	nms(boxes, scores, m_score_threshold, m_nms_threshold, indices);
+	std::cout << "indices: " << indices.size() << std::endl;
 
 	m_output_seg.clear();
 	m_output_seg.resize(indices.size());

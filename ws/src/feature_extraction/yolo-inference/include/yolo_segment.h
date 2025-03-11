@@ -11,16 +11,16 @@
 
 #include "yolo_detect.h"
 
-/**
- * @description: segmentation network output related parameters
- */
-struct OutputSeg
-{
-	int id;             //class id
-	float score;   		//score
-	cv::Rect box;       //bounding box
-	cv::Mat mask;    	//mask
-};
+// /**
+//  * @description: segmentation network output related parameters
+//  */
+// struct OutputSeg
+// {
+// 	int id;             //class id
+// 	float score;   		//score
+// 	cv::Rect box;       //bounding box
+// 	cv::Mat mask;    	//mask
+// };
 
 /**
  * @description: mask parameters
@@ -162,10 +162,5 @@ protected:
 	 * @return {*}
 	 */
 	float* m_output1_host;
-
-	/**
-	 * @description: segmentation model output
-	 */
-	std::vector<OutputSeg> m_output_seg;
 };
 
