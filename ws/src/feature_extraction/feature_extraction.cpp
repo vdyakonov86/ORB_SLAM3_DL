@@ -22,7 +22,6 @@ void extract_features(cv::Mat img, std::vector<cv::Mat> filter_masks, std::vecto
 
     cv::Mat img_masked = img.clone();
     img_masked.setTo(cv::Scalar(0,0,0));
-    cv::Mat img_res = img.clone();
 
     for (int i = 0; i < filter_masks.size(); i++) {
         auto mask = filter_masks[i];
@@ -35,17 +34,16 @@ void extract_features(cv::Mat img, std::vector<cv::Mat> filter_masks, std::vecto
         auto x = kp[i].pt.x;
         auto y = kp[i].pt.y;
 
-        auto val = img_masked.at<int>(y,x);
-        // auto val = (int)img_masked.at<uchar>(kp[i].pt.y,kp[i].pt.x);
-        // auto val = (int)img_masked.at<char>(kp[i].pt.y,kp[i].pt.x);
-        std::cout << "val: " << val << std::endl;
-        if (val == 0) {
+        uchar pixelValue = img_masked.at<uchar>(y, x);
+
+        if (pixelValue == 0) {
             kp_res.push_back(kp[i]);
         }
         else {
             kp_rej.push_back(kp[i]);
         }
     }
+
     cv::imshow("Display window", img_masked);
     int k = cv::waitKey(0);
 }
@@ -80,13 +78,15 @@ int main ( int argc, char** argv ) {
     cv::Mat img = cv::imread(img_path, cv::IMREAD_COLOR);
     std::vector<cv::KeyPoint> kp;
     std::vector<cv::KeyPoint> kp_rej;
-    
-    extract_features(img, human_masks, human_boxes, kp, kp_rej);
+    cv::Mat imgGray;
+    cv::cvtColor(img, imgGray, cv::COLOR_BGR2GRAY);
+
+    extract_features(imgGray, human_masks, human_boxes, kp, kp_rej);
 
     cv::Mat outimg;
     cv::drawKeypoints(img, kp, img, cv::Scalar(0,255,0), cv::DrawMatchesFlags::DEFAULT);
-    cv::drawKeypoints(img, kp_rej, outimg, cv::Scalar(0,0,255), cv::DrawMatchesFlags::DEFAULT);
-    cv::imshow("ORB", outimg);
+    // cv::drawKeypoints(img, kp_rej, outimg, cv::Scalar(0,0,255), cv::DrawMatchesFlags::DEFAULT);
+    cv::imshow("ORB", img);
     int k1 = cv::waitKey(0); // Wait for a keystroke in the window
 
     return 0;
