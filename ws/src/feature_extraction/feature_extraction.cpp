@@ -5,7 +5,9 @@
 #include <opencv2/features2d/features2d.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-#include <yolo.h>
+#include <yolo-opencv/yolo_opencv.h>
+
+// #include <yolo.h>
 
 using namespace std;
 
@@ -56,10 +58,13 @@ int main ( int argc, char** argv ) {
 	}
 
     string img_path = "/ws/src/feature_extraction/worker.jpg";
+    cv::Mat img = cv::imread(img_path, cv::IMREAD_COLOR);
+    cv::Mat imgGray;
+    cv::cvtColor(img, imgGray, cv::COLOR_BGR2GRAY);
 
     std::unique_ptr<YOLO> yolo = CreateFactory::instance().create(Backend_Type(atoi(argv[1])), Task_Type(atoi(argv[2])));
 	yolo->init(Algo_Type(atoi(argv[3])), Device_Type(atoi(argv[4])), Model_Type(atoi(argv[5])), argv[6]);
-	yolo->infer(img_path, false, false, argv);
+	yolo->infer(img, false, false);
 	yolo->release();
     auto seg_results = yolo->m_output_seg;
 
@@ -75,11 +80,11 @@ int main ( int argc, char** argv ) {
         }
     }
 
-    cv::Mat img = cv::imread(img_path, cv::IMREAD_COLOR);
+    // cv::Mat img = cv::imread(img_path, cv::IMREAD_COLOR);
     std::vector<cv::KeyPoint> kp;
     std::vector<cv::KeyPoint> kp_rej;
-    cv::Mat imgGray;
-    cv::cvtColor(img, imgGray, cv::COLOR_BGR2GRAY);
+    // cv::Mat imgGray;
+    // cv::cvtColor(img, imgGray, cv::COLOR_BGR2GRAY);
 
     extract_features(imgGray, human_masks, human_boxes, kp, kp_rej);
 
