@@ -80,7 +80,12 @@ RUN pip install ipython ipykernel
 # OpenCV
 
 # prerequisites
-RUN apt-get install -y cmake  g++
+# RUN apt-get install -y cmake g++
+RUN apt-get install -y g++
+# Install cmake using pip in order to get latest version
+RUN pip install cmake 
+# RUN export PYTHONPATH="${PYTHONPATH}:/home/$USERNAME/.local/bin"
+# RUN export PATH="/home/$USERNAME/.local/bin:$PATH"
 
 # Deps to fix opencv error when run orb-slam3
 RUN apt-get install -y libgtk2.0-dev pkg-config
