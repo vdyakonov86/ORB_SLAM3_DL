@@ -18,14 +18,14 @@ xhost +local:docker && \
     -v $XDG_RUNTIME_DIR/$WAYLAND_DISPLAY:/tmp/$WAYLAND_DISPLAY \
     -v /etc/localtime:/etc/localtime:ro \
     -v ${SIM_ROOT}/${WS}:/${WS} \
-    -v ${SIM_ROOT}/ORB_SLAM3:/ORB_SLAM3 \
     -v ${SIM_ROOT}/Datasets:/Datasets \
-    -v ${SIM_ROOT}/yolo-inference:/yolo-inference \
     -v /dev:/dev \
     --ipc=host \
     --network=host \
     --device-cgroup-rule='c *:* rmw' \
     --name ${CONTAINER} $IMAGE
+    # -v ${SIM_ROOT}/ORB_SLAM3:/ORB_SLAM3 \
+    # -v ${SIM_ROOT}/yolo-inference:/yolo-inference \
 
 # Explanation of arguments:
   # xhost +local:docker - allows the Docker container to access the X11 or Wayland graphical server
