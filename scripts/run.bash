@@ -19,6 +19,7 @@ xhost +local:docker && \
     -v /etc/localtime:/etc/localtime:ro \
     -v ${SIM_ROOT}/${WS}:/${WS} \
     -v ${SIM_ROOT}/Datasets:/Datasets \
+    -v ${SIM_ROOT}/onnxruntime:/onnxruntime \
     -v /dev:/dev \
     --ipc=host \
     --network=host \

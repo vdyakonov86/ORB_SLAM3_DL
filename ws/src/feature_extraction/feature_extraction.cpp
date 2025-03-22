@@ -58,13 +58,13 @@ int main ( int argc, char** argv ) {
 	}
 
     string img_path = "/ws/src/feature_extraction/worker.jpg";
-    cv::Mat img = cv::imread(img_path, cv::IMREAD_COLOR);
+    cv::Mat img = cv::imread(img_path, cv::IMREAD_UNCHANGED);
     cv::Mat imgGray;
     cv::cvtColor(img, imgGray, cv::COLOR_BGR2GRAY);
 
     std::unique_ptr<YOLO> yolo = CreateFactory::instance().create(Backend_Type(atoi(argv[1])), Task_Type(atoi(argv[2])));
 	yolo->init(Algo_Type(atoi(argv[3])), Device_Type(atoi(argv[4])), Model_Type(atoi(argv[5])), argv[6]);
-	yolo->infer(img, false, false);
+	yolo->infer(img, true, true);
 	yolo->release();
     auto seg_results = yolo->m_output_seg;
 
@@ -80,19 +80,15 @@ int main ( int argc, char** argv ) {
         }
     }
 
-    // cv::Mat img = cv::imread(img_path, cv::IMREAD_COLOR);
     std::vector<cv::KeyPoint> kp;
     std::vector<cv::KeyPoint> kp_rej;
-    // cv::Mat imgGray;
-    // cv::cvtColor(img, imgGray, cv::COLOR_BGR2GRAY);
-
     extract_features(imgGray, human_masks, human_boxes, kp, kp_rej);
 
     cv::Mat outimg;
     cv::drawKeypoints(img, kp, img, cv::Scalar(0,255,0), cv::DrawMatchesFlags::DEFAULT);
-    // cv::drawKeypoints(img, kp_rej, outimg, cv::Scalar(0,0,255), cv::DrawMatchesFlags::DEFAULT);
-    cv::imshow("ORB", img);
-    int k1 = cv::waitKey(0); // Wait for a keystroke in the window
+    cv::drawKeypoints(img, kp_rej, outimg, cv::Scalar(0,0,255), cv::DrawMatchesFlags::DEFAULT);
+    cv::imshow("ORB", outimg);
+    cv::waitKey(0); // Wait for a keystroke in the window
 
     return 0;
 }
