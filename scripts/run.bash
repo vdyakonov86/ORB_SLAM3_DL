@@ -20,6 +20,7 @@ xhost +local:docker && \
     -v ${SIM_ROOT}/${WS}:/${WS} \
     -v ${SIM_ROOT}/Datasets:/Datasets \
     -v ${SIM_ROOT}/onnxruntime:/onnxruntime \
+    -v ${SIM_ROOT}/openvino_toolkit:/openvino_toolkit \
     -v /dev:/dev \
     --ipc=host \
     --network=host \

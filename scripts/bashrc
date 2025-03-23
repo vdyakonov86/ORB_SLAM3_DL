@@ -9,8 +9,10 @@ sudo ldconfig
 # For using cmake via sudo
 RUN export PATH="/home/$USERNAME/.local/bin:$PATH"
 # For using onnxruntime
-export ONNXRUNTIME_DIR="/onnxruntime"
-export LD_LIBRARY_PATH=$ONNXRUNTIME_DIR/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/onnxruntime/lib:$LD_LIBRARY_PATH
+# For using openvino
+sudo -E /openvino_toolkit/install_dependencies/install_openvino_dependencies.sh
+source /openvino_toolkit/setupvars.sh
 
 # source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
 # . /usr/share/gazebo/setup.sh
