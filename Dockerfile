@@ -80,18 +80,18 @@ RUN pip install ipython ipykernel
 # OpenCV
 
 # prerequisites
-# RUN apt-get install -y cmake g++
-RUN apt-get install -y g++
+RUN apt-get install -y cmake g++
+# RUN apt-get install -y g++
 # Install cmake using pip in order to get latest version
-RUN pip install cmake 
+# RUN pip install cmake 
 
 # Deps to fix opencv error when run orb-slam3
 RUN apt-get install -y libgtk2.0-dev pkg-config
 
 # download and unpack sources
-RUN wget -O opencv.zip https://github.com/opencv/opencv/archive/4.8.0.zip \
+RUN wget -O opencv.zip https://github.com/opencv/opencv/archive/4.9.0.zip \
     && unzip opencv.zip \
-    && mv opencv-4.8.0 opencv \
+    && mv opencv-4.9.0 opencv \
     && rm opencv.zip
 
 # build
@@ -163,6 +163,9 @@ RUN pip install numpy
 RUN mkdir /scripts 
 COPY scripts/build_orb_slam3.sh /scripts
 RUN sudo chmod +x /scripts/build_orb_slam3.sh
+
+COPY scripts/bashrc /home/${USERNAME}/bashrc
+RUN cat /home/${USERNAME}/bashrc >> /home/${USERNAME}/.bashrc && rm /home/${USERNAME}/bashrc
 
 # ===== END ORB-SLAM3 =====
 

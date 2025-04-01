@@ -269,7 +269,7 @@ if [ $EUID -ne 0 ]; then
     exit 1
 fi
 
-iopt=
+iopt="-y"
 
 if [ "$os" == "debian9" ] || [ "$os" == "raspbian9" ] || [ "$os" == "ubuntu18.04" ] ||
    [ "$os" == "debian10" ] || [ "$os" == "raspbian10" ] || [ "$os" == "ubuntu20.04" ] || [ "$os" == "ubuntu20.10" ] || [ "$os" == "ubuntu21.04" ] ||
