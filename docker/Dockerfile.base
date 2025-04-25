@@ -1,0 +1,46 @@
+FROM ubuntu:22.04 AS orbslam3.base
+
+ARG DEBIAN_FRONTEND=noninteractive
+# create a non-root user
+ARG USERNAME
+ARG USER_UID=1000
+ARG USER_GID=$USER_UID
+ENV LANG=en_US.UTF-8
+
+RUN groupadd --gid $USER_GID $USERNAME \
+    && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
+    && mkdir /home/$USERNAME/.config && chown $USER_UID:$USER_GID /home/$USERNAME/.config
+
+# set up sudo privileges
+RUN apt-get update \
+    && apt-get install -y sudo \
+    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME\
+    && chmod 0440 /etc/sudoers.d/$USERNAME
+
+# base utils
+# TODO: add --no-install-recommends 
+RUN apt-get install -y \
+    vim \
+    git \
+    wget \
+    curl \
+    zip \
+    unzip \
+    python3-pip \
+    x11-apps \
+    # Autocomplete
+    bash-completion \
+    python3-argcomplete \
+    cmake \
+    g++
+
+# Remove folder in order to ensure to run apt-get update before installing new package 
+# (without this folder 'apt-get update' will not work)
+RUN rm -rf /var/lib/apt/lists/*
+
+# add user to video group to allow access to webcam
+RUN usermod --append --groups video $USERNAME
+
+# switch from root to user
+USER $USERNAME
+CMD ["bash"]

@@ -1,0 +1,7 @@
+FROM orbslam3:feature_extraction AS orbslam3.dev
+
+ARG USERNAME
+ARG BUILD_CONTEXT_PATH
+
+COPY ${BUILD_CONTEXT_PATH}/scripts/.bashrc /home/${USERNAME}/bashrc
+RUN cat /home/${USERNAME}/bashrc >> /home/${USERNAME}/.bashrc && rm /home/${USERNAME}/bashrc

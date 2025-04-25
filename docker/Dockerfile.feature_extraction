@@ -1,0 +1,26 @@
+FROM orbslam3:main AS orbslam3.feature_extraction
+
+ARG USERNAME
+ARG BUILD_CONTEXT_PATH
+ARG DEBIAN_FRONTEND=noninteractive
+
+USER root
+
+# WORKDIR /
+# COPY ${BUILD_CONTEXT_PATH}/../ws/src/onnx_runtime_cpp .
+# WORKDIR /onnx_runtime_cpp
+
+RUN apt-get update && apt-get install -y --no-install-recommends libopencv-dev
+
+# newer cmake version
+RUN apt-get -y purge cmake && sudo pip install cmake==3.25.0
+
+# COPY ${BUILD_CONTEXT_PATH}/../ws/src/onnx_runtime_cpp .
+
+# TODO: add build default lib and apps
+
+RUN rm -rf /var/lib/apt/lists/*
+
+USER ${USERNAME}
+
+# WORKDIR /
