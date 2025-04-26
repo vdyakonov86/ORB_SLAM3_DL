@@ -4,7 +4,7 @@ CONTAINER=$2
 WS="${3:-"ros_ws"}"
 
 # The directory from which script has been run
-SIM_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." && pwd )"
+SIM_ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../.." && pwd )"
 echo "Path to ${WS} volume folder: ${SIM_ROOT}/${WS}"
 
 # TODO: делать xhost -local:docker после удаления контейнера
@@ -21,6 +21,7 @@ xhost +local:docker && \
     -v ${SIM_ROOT}/Datasets:/Datasets \
     -v ${SIM_ROOT}/onnxruntime:/onnxruntime \
     -v ${SIM_ROOT}/openvino_toolkit:/openvino_toolkit \
+    -v ${SIM_ROOT}/.git:/.git \
     -v /dev:/dev \
     --ipc=host \
     --network=host \
