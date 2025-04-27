@@ -21,6 +21,7 @@ https://github.com/Mauhing/ORB_SLAM3?tab=readme-ov-file#1-installation-of-orb-sl
 - Cannot find -lboost_serialization: https://github.com/UZ-SLAMLab/ORB_SLAM3/issues/702
 - fatal error: boost/serialization/serialization.hpp: No such file or directory: https://github.com/UZ-SLAMLab/ORB_SLAM3/issues/342
 
+- fatal error: openssl/md5.h: No such file or directory: https://stackoverflow.com/questions/46008624/how-to-fix-fatal-error-openssl-opensslv-h-no-such-file-or-directory-in-redhat
 
 # Yolo inference
 - OpenCV DNN failing to load an ONNX file: computeShapeByReshapeMask issue: https://github.com/opencv/opencv/issues/23365
