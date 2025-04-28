@@ -88,6 +88,22 @@
     "ios": "cpp",
     "locale": "cpp",
     "queue": "cpp",
-    "filesystem": "cpp"
+    "filesystem": "cpp",
+    "csignal": "cpp",
+    "any": "cpp",
+    "strstream": "cpp",
+    "cfenv": "cpp",
+    "charconv": "cpp",
+    "forward_list": "cpp",
+    "unordered_set": "cpp",
+    "regex": "cpp",
+    "future": "cpp",
+    "ranges": "cpp",
+    "shared_mutex": "cpp",
+    "span": "cpp",
+    "valarray": "cpp",
+    "stack": "cpp",
+    "cassert": "cpp",
+    "*.ipp": "cpp"
   }
 }

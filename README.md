@@ -3,6 +3,8 @@ python evaluation/evaluate_ate_scale.py evaluation/Ground_truth/TUM_rgbd/fr3_sit
 
 python evaluation/evaluate_ate_scale.py evaluation/Ground_truth/TUM_rgbd/fr3_walking_xyz.txt /ws/src/ORB_SLAM3/CameraTraj_fr3_walking_xyz.txt --plot=true --verbose
 
+python evaluation/evaluate_ate_scale.py evaluation/Ground_truth/TUM_rgbd/fr3_walking_rpy.txt /ws/src/ORB_SLAM3/CameraTraj_fr3_walking_rpy.txt --plot=true --verbose
+
 Association:
 python src/python/associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt --outpath PATH_TO_SEQUENCE --outfile FILENAME
 

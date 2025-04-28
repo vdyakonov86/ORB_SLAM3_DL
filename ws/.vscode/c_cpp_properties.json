@@ -6,7 +6,8 @@
                 "${workspaceFolder}/**",
                 "/usr/local/include/**",
                 "/onnxruntime/include/**",
-                "/openvino_toolkit/runtime/include/**"
+                "/openvino_toolkit/runtime/include/**",
+                "/"
             ],
             "defines": [],
             "cStandard": "c17",
