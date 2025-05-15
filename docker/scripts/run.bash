@@ -14,19 +14,16 @@ xhost +local:docker && \
     --rm \
     -e DISPLAY=$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
-    -v ~/.Xauthority:/root/.Xauthority \
+    -v ~/.Xauthority:/home/ubuntu/.Xauthority \
     -v $XDG_RUNTIME_DIR/$WAYLAND_DISPLAY:/tmp/$WAYLAND_DISPLAY \
     -v /etc/localtime:/etc/localtime:ro \
-    -v ${SIM_ROOT}/${WS}:/${WS} \
-    -v ${SIM_ROOT}/Datasets:/Datasets \
-    -v ${SIM_ROOT}/onnxruntime:/onnxruntime \
-    -v ${SIM_ROOT}/openvino_toolkit:/openvino_toolkit \
-    -v ${SIM_ROOT}/.git:/.git \
+    -v ${SIM_ROOT}/:/orbslam3_dl \
     -v /dev:/dev \
     --ipc=host \
     --network=host \
+    --gpus all \
     --device-cgroup-rule='c *:* rmw' \
-    --name ${CONTAINER} $IMAGE
+    --name $CONTAINER $IMAGE
 
 # Explanation of arguments:
   # xhost +local:docker - allows the Docker container to access the X11 or Wayland graphical server
