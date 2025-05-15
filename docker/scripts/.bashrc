@@ -11,10 +11,10 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/home/ubuntu/.local/bin:$PATH
 
 # For using onnxruntime
-export LD_LIBRARY_PATH=/onnxruntime/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/orbslam3_dl/onnxruntime_gpu/lib:$LD_LIBRARY_PATH
 # For using openvino
-sudo -E /openvino_toolkit/install_dependencies/install_openvino_dependencies.sh
-source /openvino_toolkit/setupvars.sh
+# sudo -E /openvino_toolkit/install_dependencies/install_openvino_dependencies.sh
+# source /openvino_toolkit/setupvars.sh
 
 
 # source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash

@@ -1,3 +1,5 @@
-Datasets
+datasets
+onnxruntime_gpu
+onnxruntime
 build/
 .vscode
