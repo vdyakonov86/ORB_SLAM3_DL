@@ -126,6 +126,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends libopencv-dev
 # newer cmake version
 RUN apt-get -y purge cmake && sudo pip install cmake==3.25.0
 
+RUN apt-get update
 RUN apt-get install -y libboost-all-dev libboost-serialization-dev
 
 RUN pip install numpy matplotlib
