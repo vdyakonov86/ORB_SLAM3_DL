@@ -1,0 +1,2164 @@
+
+ORB-SLAM3 Copyright (C) 2017-2020 Carlos Campos, Richard Elvira, Juan J. Gómez, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+ORB-SLAM2 Copyright (C) 2014-2016 Raúl Mur-Artal, José M.M. Montiel and Juan D. Tardós, University of Zaragoza.
+This program comes with ABSOLUTELY NO WARRANTY;
+This is free software, and you are welcome to redistribute it
+under certain conditions. See LICENSE.txt.
+
+Input sensor was set to: RGB-D
+Feature extractor was set to: SUPERPOINT
+Loading settings from /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM_superpoint.yaml
+	-Loaded camera 1
+Camera.newHeight optional parameter does not exist...
+Camera.newWidth optional parameter does not exist...
+	-Loaded image info
+	-Loaded RGB-D calibration
+	-Loaded ORB settings
+Viewer.imageViewScale optional parameter does not exist...
+	-Loaded viewer settings
+System.LoadAtlasFromFile optional parameter does not exist...
+System.SaveAtlasToFile optional parameter does not exist...
+	-Loaded Atlas settings
+System.thFarPoints optional parameter does not exist...
+	-Loaded misc parameters
+----------------------------------
+SLAM settings: 
+	-Camera 1 parameters (Pinhole): [ 517.306 516.469 318.643 255.314 ]
+	-Camera 1 distortion parameters: [  0.262383 -0.953104 -0.005358 0.002628 1.16331 ]
+	-Original image size: [ 640 , 480 ]
+	-Current image size: [ 640 , 480 ]
+	-Sequence FPS: 30
+	-RGB-D depth map factor: 5000
+	-Features per image: 1000
+	-ORB scale factor: 1
+	-ORB number of scales: 1
+	-Initial FAST threshold: 20
+	-Min FAST threshold: 7
+
+
+Loading ORB Vocabulary. This could take a while...
+Vocabulary loaded!
+
+Initialization of Atlas from scratch 
+Creation of new map with id: 0
+Creation of new map with last KF id: 0
+descriptorDistMetric: L2
+Seq. Name: 
+There are 1 cameras in the atlas
+Camera 0 is pinhole
+
+-------
+Start processing sequence ...
+Images in the sequence: 827
+
+libEGL warning: DRI3: failed to query the version
+mvKeys: 1575
+First KF:0; Map init KF:0
+New Map created with 1071 points
+Gtk-Message: 04:47:16.503: Failed to load module "canberra-gtk-module"
+Starting the Viewer
+mvKeys: 1583
+TRACK: Track with respect to the reference KF
+TrackReferenceKeyFrame SearchByBoW
+SearchByBoW 1
+matches: 287
+nmatchesMap: 226
+SearchLocalPoints SearchByProjection
+matches: 289
+mnMatchesInliers: 339
+mvKeys: 1589
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 637
+nmatches after discarding outliers: 383
+nmatchesMap: 383
+SearchLocalPoints SearchByProjection
+matches: 234
+mnMatchesInliers: 475
+mvKeys: 1616
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 646
+nmatches after discarding outliers: 410
+nmatchesMap: 410
+SearchLocalPoints SearchByProjection
+matches: 213
+mnMatchesInliers: 469
+mvKeys: 1565
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 412
+nmatches after discarding outliers: 315
+nmatchesMap: 315
+SearchLocalPoints SearchByProjection
+matches: 291
+mnMatchesInliers: 427
+mvKeys: 1609
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 573
+nmatches after discarding outliers: 352
+nmatchesMap: 352
+SearchLocalPoints SearchByProjection
+matches: 215
+mnMatchesInliers: 414
+mvKeys: 1617
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 349
+nmatches after discarding outliers: 225
+nmatchesMap: 225
+SearchLocalPoints SearchByProjection
+matches: 308
+mnMatchesInliers: 327
+mvKeys: 1635
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 543
+nmatches after discarding outliers: 283
+nmatchesMap: 283
+SearchLocalPoints SearchByProjection
+matches: 266
+mnMatchesInliers: 343
+mvKeys: 1688
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 297
+nmatches after discarding outliers: 201
+nmatchesMap: 201
+SearchLocalPoints SearchByProjection
+matches: 332
+mnMatchesInliers: 296
+mvKeys: 1692
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 482
+nmatches after discarding outliers: 206
+nmatchesMap: 206
+SearchLocalPoints SearchByProjection
+matches: 235
+mnMatchesInliers: 254
+mvKeys: 1674
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 123
+nmatches after discarding outliers: 38
+nmatchesMap: 38
+SearchLocalPoints SearchByProjection
+matches: 179
+mnMatchesInliers: 75
+mvKeys: 1721
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 372
+nmatches after discarding outliers: 117
+nmatchesMap: 117
+SearchLocalPoints SearchByProjection
+matches: 339
+mnMatchesInliers: 204
+mvKeys: 1638
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 137
+nmatches after discarding outliers: 67
+nmatchesMap: 67
+SearchLocalPoints SearchByProjection
+matches: 314
+mnMatchesInliers: 135
+mvKeys: 1739
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 459
+nmatches after discarding outliers: 182
+nmatchesMap: 182
+SearchLocalPoints SearchByProjection
+matches: 284
+mnMatchesInliers: 248
+mvKeys: 1709
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 155
+nmatches after discarding outliers: 84
+nmatchesMap: 84
+SearchLocalPoints SearchByProjection
+matches: 354
+mnMatchesInliers: 159
+mvKeys: 1667
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 118
+nmatches after discarding outliers: 56
+nmatchesMap: 56
+SearchLocalPoints SearchByProjection
+matches: 469
+mnMatchesInliers: 211
+mvKeys: 1725
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 102
+nmatches after discarding outliers: 52
+nmatchesMap: 52
+SearchLocalPoints SearchByProjection
+matches: 289
+mnMatchesInliers: 101
+mvKeys: 1689
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 655
+nmatches after discarding outliers: 341
+nmatchesMap: 341
+SearchLocalPoints SearchByProjection
+matches: 275
+mnMatchesInliers: 390
+mvKeys: 1645
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 204
+nmatches after discarding outliers: 96
+nmatchesMap: 96
+SearchLocalPoints SearchByProjection
+matches: 352
+mnMatchesInliers: 157
+mvKeys: 1685
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 127
+nmatches after discarding outliers: 67
+nmatchesMap: 67
+SearchLocalPoints SearchByProjection
+matches: 466
+mnMatchesInliers: 203
+mvKeys: 1722
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 165
+nmatches after discarding outliers: 86
+nmatchesMap: 86
+SearchLocalPoints SearchByProjection
+matches: 359
+mnMatchesInliers: 149
+mvKeys: 1683
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 63
+nmatches after discarding outliers: 26
+nmatchesMap: 26
+SearchLocalPoints SearchByProjection
+matches: 241
+mnMatchesInliers: 57
+mvKeys: 1613
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 581
+nmatches after discarding outliers: 259
+nmatchesMap: 259
+SearchLocalPoints SearchByProjection
+matches: 200
+mnMatchesInliers: 296
+mvKeys: 1670
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 247
+nmatches after discarding outliers: 148
+nmatchesMap: 148
+SearchLocalPoints SearchByProjection
+matches: 414
+mnMatchesInliers: 284
+mvKeys: 1690
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 213
+nmatches after discarding outliers: 121
+nmatchesMap: 121
+SearchLocalPoints SearchByProjection
+matches: 370
+mnMatchesInliers: 216
+mvKeys: 1638
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 116
+nmatches after discarding outliers: 55
+nmatchesMap: 55
+SearchLocalPoints SearchByProjection
+matches: 302
+mnMatchesInliers: 96
+mvKeys: 1640
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 473
+nmatches after discarding outliers: 257
+nmatchesMap: 257
+SearchLocalPoints SearchByProjection
+matches: 332
+mnMatchesInliers: 307
+mvKeys: 1556
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 218
+nmatches after discarding outliers: 110
+nmatchesMap: 110
+SearchLocalPoints SearchByProjection
+matches: 353
+mnMatchesInliers: 166
+mvKeys: 1486
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 126
+nmatches after discarding outliers: 69
+nmatchesMap: 69
+SearchLocalPoints SearchByProjection
+matches: 360
+mnMatchesInliers: 151
+mvKeys: 1673
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 133
+nmatches after discarding outliers: 79
+nmatchesMap: 79
+SearchLocalPoints SearchByProjection
+matches: 341
+mnMatchesInliers: 133
+mvKeys: 1634
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 105
+nmatches after discarding outliers: 56
+nmatchesMap: 56
+SearchLocalPoints SearchByProjection
+matches: 294
+mnMatchesInliers: 112
+mvKeys: 1489
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 542
+nmatches after discarding outliers: 174
+nmatchesMap: 174
+SearchLocalPoints SearchByProjection
+matches: 151
+mnMatchesInliers: 196
+mvKeys: 1647
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 137
+nmatches after discarding outliers: 42
+nmatchesMap: 42
+SearchLocalPoints SearchByProjection
+matches: 360
+mnMatchesInliers: 112
+mvKeys: 1695
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 93
+nmatches after discarding outliers: 51
+nmatchesMap: 51
+SearchLocalPoints SearchByProjection
+matches: 400
+mnMatchesInliers: 162
+mvKeys: 1492
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 103
+nmatches after discarding outliers: 49
+nmatchesMap: 49
+SearchLocalPoints SearchByProjection
+matches: 272
+mnMatchesInliers: 125
+mvKeys: 1509
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 95
+nmatches after discarding outliers: 56
+nmatchesMap: 56
+SearchLocalPoints SearchByProjection
+matches: 234
+mnMatchesInliers: 100
+mvKeys: 1476
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 610
+nmatches after discarding outliers: 330
+nmatchesMap: 330
+SearchLocalPoints SearchByProjection
+matches: 125
+mnMatchesInliers: 340
+mvKeys: 1500
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 295
+nmatches after discarding outliers: 153
+nmatchesMap: 153
+SearchLocalPoints SearchByProjection
+matches: 298
+mnMatchesInliers: 213
+mvKeys: 1659
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 154
+nmatches after discarding outliers: 75
+nmatchesMap: 75
+SearchLocalPoints SearchByProjection
+matches: 294
+mnMatchesInliers: 113
+mvKeys: 1628
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 490
+nmatches after discarding outliers: 230
+nmatchesMap: 230
+SearchLocalPoints SearchByProjection
+matches: 208
+mnMatchesInliers: 264
+mvKeys: 1634
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 210
+nmatches after discarding outliers: 95
+nmatchesMap: 95
+SearchLocalPoints SearchByProjection
+matches: 501
+mnMatchesInliers: 237
+mvKeys: 1457
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 167
+nmatches after discarding outliers: 76
+nmatchesMap: 76
+SearchLocalPoints SearchByProjection
+matches: 413
+mnMatchesInliers: 157
+mvKeys: 1634
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 96
+nmatches after discarding outliers: 37
+nmatchesMap: 37
+SearchLocalPoints SearchByProjection
+matches: 314
+mnMatchesInliers: 86
+mvKeys: 1575
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 671
+nmatches after discarding outliers: 342
+nmatchesMap: 342
+SearchLocalPoints SearchByProjection
+matches: 206
+mnMatchesInliers: 379
+mvKeys: 1657
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 330
+nmatches after discarding outliers: 172
+nmatchesMap: 172
+SearchLocalPoints SearchByProjection
+matches: 360
+mnMatchesInliers: 268
+mvKeys: 1635
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 122
+nmatches after discarding outliers: 51
+nmatchesMap: 51
+SearchLocalPoints SearchByProjection
+matches: 175
+mnMatchesInliers: 88
+mvKeys: 1600
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 476
+nmatches after discarding outliers: 181
+nmatchesMap: 181
+SearchLocalPoints SearchByProjection
+matches: 330
+mnMatchesInliers: 250
+mvKeys: 1590
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 184
+nmatches after discarding outliers: 83
+nmatchesMap: 83
+SearchLocalPoints SearchByProjection
+matches: 417
+mnMatchesInliers: 178
+mvKeys: 1396
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 118
+nmatches after discarding outliers: 58
+nmatchesMap: 58
+SearchLocalPoints SearchByProjection
+matches: 340
+mnMatchesInliers: 137
+mvKeys: 1528
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 117
+nmatches after discarding outliers: 60
+nmatchesMap: 60
+SearchLocalPoints SearchByProjection
+matches: 340
+mnMatchesInliers: 135
+mvKeys: 1602
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 67
+nmatches after discarding outliers: 20
+nmatchesMap: 20
+SearchLocalPoints SearchByProjection
+matches: 222
+mnMatchesInliers: 64
+mvKeys: 1669
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 674
+nmatches after discarding outliers: 237
+nmatchesMap: 237
+SearchLocalPoints SearchByProjection
+matches: 188
+mnMatchesInliers: 267
+mvKeys: 1626
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 195
+nmatches after discarding outliers: 103
+nmatchesMap: 103
+SearchLocalPoints SearchByProjection
+matches: 343
+mnMatchesInliers: 189
+mvKeys: 1632
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 142
+nmatches after discarding outliers: 73
+nmatchesMap: 73
+SearchLocalPoints SearchByProjection
+matches: 292
+mnMatchesInliers: 122
+mvKeys: 1497
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 68
+nmatches after discarding outliers: 37
+nmatchesMap: 37
+SearchLocalPoints SearchByProjection
+matches: 189
+mnMatchesInliers: 63
+mvKeys: 1600
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 505
+nmatches after discarding outliers: 196
+nmatchesMap: 196
+SearchLocalPoints SearchByProjection
+matches: 205
+mnMatchesInliers: 241
+mvKeys: 1638
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 195
+nmatches after discarding outliers: 119
+nmatchesMap: 119
+SearchLocalPoints SearchByProjection
+matches: 258
+mnMatchesInliers: 165
+mvKeys: 1643
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 461
+nmatches after discarding outliers: 174
+nmatchesMap: 174
+SearchLocalPoints SearchByProjection
+matches: 196
+mnMatchesInliers: 200
+mvKeys: 1620
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 760
+nmatches after discarding outliers: 402
+nmatchesMap: 402
+SearchLocalPoints SearchByProjection
+matches: 215
+mnMatchesInliers: 438
+mvKeys: 1673
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 284
+nmatches after discarding outliers: 132
+nmatchesMap: 132
+SearchLocalPoints SearchByProjection
+matches: 335
+mnMatchesInliers: 179
+mvKeys: 1603
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 315
+nmatches after discarding outliers: 89
+nmatchesMap: 89
+SearchLocalPoints SearchByProjection
+matches: 188
+mnMatchesInliers: 111
+mvKeys: 1439
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 554
+nmatches after discarding outliers: 224
+nmatchesMap: 224
+SearchLocalPoints SearchByProjection
+matches: 194
+mnMatchesInliers: 255
+mvKeys: 1554
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 199
+nmatches after discarding outliers: 108
+nmatchesMap: 108
+SearchLocalPoints SearchByProjection
+matches: 439
+mnMatchesInliers: 238
+mvKeys: 1432
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 115
+nmatches after discarding outliers: 57
+nmatchesMap: 57
+SearchLocalPoints SearchByProjection
+matches: 241
+mnMatchesInliers: 130
+mvKeys: 1543
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 313
+nmatches after discarding outliers: 120
+nmatchesMap: 120
+SearchLocalPoints SearchByProjection
+matches: 160
+mnMatchesInliers: 153
+mvKeys: 1528
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 334
+nmatches after discarding outliers: 133
+nmatchesMap: 133
+SearchLocalPoints SearchByProjection
+matches: 168
+mnMatchesInliers: 163
+mvKeys: 1498
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 334
+nmatches after discarding outliers: 124
+nmatchesMap: 124
+SearchLocalPoints SearchByProjection
+matches: 199
+mnMatchesInliers: 168
+mvKeys: 1489
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 349
+nmatches after discarding outliers: 160
+nmatchesMap: 157
+SearchLocalPoints SearchByProjection
+matches: 187
+mnMatchesInliers: 195
+mvKeys: 1462
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 298
+nmatches after discarding outliers: 98
+nmatchesMap: 98
+SearchLocalPoints SearchByProjection
+matches: 168
+mnMatchesInliers: 121
+mvKeys: 1434
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 295
+nmatches after discarding outliers: 103
+nmatchesMap: 103
+SearchLocalPoints SearchByProjection
+matches: 199
+mnMatchesInliers: 140
+mvKeys: 1481
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 228
+nmatches after discarding outliers: 89
+nmatchesMap: 89
+SearchLocalPoints SearchByProjection
+matches: 175
+mnMatchesInliers: 127
+mvKeys: 1362
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 269
+nmatches after discarding outliers: 113
+nmatchesMap: 113
+SearchLocalPoints SearchByProjection
+matches: 139
+mnMatchesInliers: 139
+mvKeys: 1321
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 227
+nmatches after discarding outliers: 86
+nmatchesMap: 86
+SearchLocalPoints SearchByProjection
+matches: 147
+mnMatchesInliers: 108
+mvKeys: 1336
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 245
+nmatches after discarding outliers: 84
+nmatchesMap: 84
+SearchLocalPoints SearchByProjection
+matches: 157
+mnMatchesInliers: 118
+mvKeys: 1345
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 185
+nmatches after discarding outliers: 77
+nmatchesMap: 77
+SearchLocalPoints SearchByProjection
+matches: 143
+mnMatchesInliers: 99
+mvKeys: 1345
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 278
+nmatches after discarding outliers: 132
+nmatchesMap: 132
+SearchLocalPoints SearchByProjection
+matches: 126
+mnMatchesInliers: 143
+mvKeys: 1357
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 258
+nmatches after discarding outliers: 107
+nmatchesMap: 107
+SearchLocalPoints SearchByProjection
+matches: 161
+mnMatchesInliers: 141
+mvKeys: 1380
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 405
+nmatches after discarding outliers: 167
+nmatchesMap: 167
+SearchLocalPoints SearchByProjection
+matches: 172
+mnMatchesInliers: 168
+mvKeys: 1338
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 106
+nmatches after discarding outliers: 62
+nmatchesMap: 62
+SearchLocalPoints SearchByProjection
+matches: 187
+mnMatchesInliers: 105
+mvKeys: 1370
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 371
+nmatches after discarding outliers: 153
+nmatchesMap: 153
+SearchLocalPoints SearchByProjection
+matches: 181
+mnMatchesInliers: 169
+mvKeys: 1341
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 117
+nmatches after discarding outliers: 69
+nmatchesMap: 69
+SearchLocalPoints SearchByProjection
+matches: 194
+mnMatchesInliers: 120
+mvKeys: 1345
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 273
+nmatches after discarding outliers: 117
+nmatchesMap: 117
+SearchLocalPoints SearchByProjection
+matches: 124
+mnMatchesInliers: 141
+mvKeys: 1431
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 236
+nmatches after discarding outliers: 93
+nmatchesMap: 93
+SearchLocalPoints SearchByProjection
+matches: 115
+mnMatchesInliers: 109
+mvKeys: 1330
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 285
+nmatches after discarding outliers: 110
+nmatchesMap: 109
+SearchLocalPoints SearchByProjection
+matches: 135
+mnMatchesInliers: 130
+mvKeys: 1330
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 234
+nmatches after discarding outliers: 81
+nmatchesMap: 81
+SearchLocalPoints SearchByProjection
+matches: 205
+mnMatchesInliers: 108
+mvKeys: 1388
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 364
+nmatches after discarding outliers: 190
+nmatchesMap: 190
+SearchLocalPoints SearchByProjection
+matches: 195
+mnMatchesInliers: 232
+mvKeys: 1390
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 180
+nmatches after discarding outliers: 78
+nmatchesMap: 78
+SearchLocalPoints SearchByProjection
+matches: 331
+mnMatchesInliers: 145
+mvKeys: 1403
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 113
+nmatches after discarding outliers: 67
+nmatchesMap: 67
+SearchLocalPoints SearchByProjection
+matches: 304
+mnMatchesInliers: 131
+mvKeys: 1391
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 358
+nmatches after discarding outliers: 166
+nmatchesMap: 166
+SearchLocalPoints SearchByProjection
+matches: 302
+mnMatchesInliers: 222
+mvKeys: 1536
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 177
+nmatches after discarding outliers: 94
+nmatchesMap: 94
+SearchLocalPoints SearchByProjection
+matches: 362
+mnMatchesInliers: 164
+mvKeys: 1385
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 142
+nmatches after discarding outliers: 84
+nmatchesMap: 84
+SearchLocalPoints SearchByProjection
+matches: 368
+mnMatchesInliers: 154
+mvKeys: 1385
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 109
+nmatches after discarding outliers: 55
+nmatchesMap: 55
+SearchLocalPoints SearchByProjection
+matches: 273
+mnMatchesInliers: 101
+mvKeys: 1408
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 396
+nmatches after discarding outliers: 200
+nmatchesMap: 200
+SearchLocalPoints SearchByProjection
+matches: 192
+mnMatchesInliers: 229
+mvKeys: 1394
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 175
+nmatches after discarding outliers: 89
+nmatchesMap: 89
+SearchLocalPoints SearchByProjection
+matches: 276
+mnMatchesInliers: 140
+mvKeys: 1346
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 117
+nmatches after discarding outliers: 65
+nmatchesMap: 65
+SearchLocalPoints SearchByProjection
+matches: 257
+mnMatchesInliers: 114
+mvKeys: 1420
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 390
+nmatches after discarding outliers: 196
+nmatchesMap: 196
+SearchLocalPoints SearchByProjection
+matches: 290
+mnMatchesInliers: 236
+mvKeys: 1391
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 201
+nmatches after discarding outliers: 106
+nmatchesMap: 106
+SearchLocalPoints SearchByProjection
+matches: 378
+mnMatchesInliers: 166
+mvKeys: 1395
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 141
+nmatches after discarding outliers: 75
+nmatchesMap: 75
+SearchLocalPoints SearchByProjection
+matches: 366
+mnMatchesInliers: 136
+mvKeys: 1388
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 85
+nmatches after discarding outliers: 41
+nmatchesMap: 41
+SearchLocalPoints SearchByProjection
+matches: 264
+mnMatchesInliers: 83
+mvKeys: 1404
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 378
+nmatches after discarding outliers: 192
+nmatchesMap: 192
+SearchLocalPoints SearchByProjection
+matches: 198
+mnMatchesInliers: 225
+mvKeys: 1395
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 177
+nmatches after discarding outliers: 90
+nmatchesMap: 90
+SearchLocalPoints SearchByProjection
+matches: 284
+mnMatchesInliers: 149
+mvKeys: 1338
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 97
+nmatches after discarding outliers: 45
+nmatchesMap: 45
+SearchLocalPoints SearchByProjection
+matches: 205
+mnMatchesInliers: 87
+mvKeys: 1378
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 284
+nmatches after discarding outliers: 90
+nmatchesMap: 90
+SearchLocalPoints SearchByProjection
+matches: 141
+mnMatchesInliers: 104
+mvKeys: 1390
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 348
+nmatches after discarding outliers: 123
+nmatchesMap: 123
+SearchLocalPoints SearchByProjection
+matches: 275
+mnMatchesInliers: 205
+mvKeys: 1360
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 144
+nmatches after discarding outliers: 88
+nmatchesMap: 88
+SearchLocalPoints SearchByProjection
+matches: 262
+mnMatchesInliers: 146
+mvKeys: 1361
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 116
+nmatches after discarding outliers: 59
+nmatchesMap: 59
+SearchLocalPoints SearchByProjection
+matches: 312
+mnMatchesInliers: 134
+mvKeys: 1429
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 264
+nmatches after discarding outliers: 113
+nmatchesMap: 113
+SearchLocalPoints SearchByProjection
+matches: 195
+mnMatchesInliers: 145
+mvKeys: 1409
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 108
+nmatches after discarding outliers: 65
+nmatchesMap: 65
+SearchLocalPoints SearchByProjection
+matches: 259
+mnMatchesInliers: 99
+mvKeys: 1411
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 331
+nmatches after discarding outliers: 165
+nmatchesMap: 165
+SearchLocalPoints SearchByProjection
+matches: 232
+mnMatchesInliers: 202
+mvKeys: 1499
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 147
+nmatches after discarding outliers: 76
+nmatchesMap: 76
+SearchLocalPoints SearchByProjection
+matches: 273
+mnMatchesInliers: 129
+mvKeys: 1502
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 100
+nmatches after discarding outliers: 49
+nmatchesMap: 49
+SearchLocalPoints SearchByProjection
+matches: 303
+mnMatchesInliers: 110
+mvKeys: 1349
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 259
+nmatches after discarding outliers: 113
+nmatchesMap: 113
+SearchLocalPoints SearchByProjection
+matches: 283
+mnMatchesInliers: 170
+mvKeys: 1363
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 138
+nmatches after discarding outliers: 74
+nmatchesMap: 74
+SearchLocalPoints SearchByProjection
+matches: 361
+mnMatchesInliers: 167
+mvKeys: 1344
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 146
+nmatches after discarding outliers: 85
+nmatchesMap: 85
+SearchLocalPoints SearchByProjection
+matches: 327
+mnMatchesInliers: 140
+mvKeys: 1374
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 106
+nmatches after discarding outliers: 60
+nmatchesMap: 60
+SearchLocalPoints SearchByProjection
+matches: 307
+mnMatchesInliers: 121
+mvKeys: 1397
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 274
+nmatches after discarding outliers: 125
+nmatchesMap: 125
+SearchLocalPoints SearchByProjection
+matches: 215
+mnMatchesInliers: 162
+mvKeys: 1339
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 134
+nmatches after discarding outliers: 72
+nmatchesMap: 72
+SearchLocalPoints SearchByProjection
+matches: 246
+mnMatchesInliers: 130
+mvKeys: 1403
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 105
+nmatches after discarding outliers: 59
+nmatchesMap: 59
+SearchLocalPoints SearchByProjection
+matches: 280
+mnMatchesInliers: 131
+mvKeys: 1346
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 109
+nmatches after discarding outliers: 65
+nmatchesMap: 65
+SearchLocalPoints SearchByProjection
+matches: 268
+mnMatchesInliers: 122
+mvKeys: 1393
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 296
+nmatches after discarding outliers: 139
+nmatchesMap: 139
+SearchLocalPoints SearchByProjection
+matches: 275
+mnMatchesInliers: 194
+mvKeys: 1404
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 160
+nmatches after discarding outliers: 88
+nmatchesMap: 88
+SearchLocalPoints SearchByProjection
+matches: 256
+mnMatchesInliers: 141
+mvKeys: 1365
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 122
+nmatches after discarding outliers: 69
+nmatchesMap: 69
+SearchLocalPoints SearchByProjection
+matches: 234
+mnMatchesInliers: 130
+mvKeys: 1391
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 107
+nmatches after discarding outliers: 59
+nmatchesMap: 59
+SearchLocalPoints SearchByProjection
+matches: 228
+mnMatchesInliers: 114
+mvKeys: 1373
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 332
+nmatches after discarding outliers: 179
+nmatchesMap: 179
+SearchLocalPoints SearchByProjection
+matches: 226
+mnMatchesInliers: 217
+mvKeys: 1377
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 175
+nmatches after discarding outliers: 89
+nmatchesMap: 89
+SearchLocalPoints SearchByProjection
+matches: 233
+mnMatchesInliers: 137
+mvKeys: 1359
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 101
+nmatches after discarding outliers: 51
+nmatchesMap: 51
+SearchLocalPoints SearchByProjection
+matches: 201
+mnMatchesInliers: 99
+mvKeys: 1351
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 276
+nmatches after discarding outliers: 130
+nmatchesMap: 130
+SearchLocalPoints SearchByProjection
+matches: 220
+mnMatchesInliers: 176
+mvKeys: 1382
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 141
+nmatches after discarding outliers: 88
+nmatchesMap: 88
+SearchLocalPoints SearchByProjection
+matches: 227
+mnMatchesInliers: 129
+mvKeys: 1374
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 98
+nmatches after discarding outliers: 57
+nmatchesMap: 57
+SearchLocalPoints SearchByProjection
+matches: 182
+mnMatchesInliers: 98
+mvKeys: 1367
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 316
+nmatches after discarding outliers: 120
+nmatchesMap: 120
+SearchLocalPoints SearchByProjection
+matches: 189
+mnMatchesInliers: 150
+mvKeys: 1330
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 103
+nmatches after discarding outliers: 50
+nmatchesMap: 50
+SearchLocalPoints SearchByProjection
+matches: 248
+mnMatchesInliers: 87
+mvKeys: 1384
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 287
+nmatches after discarding outliers: 130
+nmatchesMap: 130
+SearchLocalPoints SearchByProjection
+matches: 200
+mnMatchesInliers: 151
+mvKeys: 1339
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 100
+nmatches after discarding outliers: 43
+nmatchesMap: 43
+SearchLocalPoints SearchByProjection
+matches: 167
+mnMatchesInliers: 78
+mvKeys: 1298
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 312
+nmatches after discarding outliers: 105
+nmatchesMap: 105
+SearchLocalPoints SearchByProjection
+matches: 258
+mnMatchesInliers: 146
+mvKeys: 1292
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 119
+nmatches after discarding outliers: 71
+nmatchesMap: 71
+SearchLocalPoints SearchByProjection
+matches: 334
+mnMatchesInliers: 137
+mvKeys: 1425
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 107
+nmatches after discarding outliers: 38
+nmatchesMap: 38
+SearchLocalPoints SearchByProjection
+matches: 267
+mnMatchesInliers: 84
+mvKeys: 1404
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 353
+nmatches after discarding outliers: 159
+nmatchesMap: 159
+SearchLocalPoints SearchByProjection
+matches: 177
+mnMatchesInliers: 189
+mvKeys: 1358
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 141
+nmatches after discarding outliers: 64
+nmatchesMap: 64
+SearchLocalPoints SearchByProjection
+matches: 253
+mnMatchesInliers: 122
+mvKeys: 1323
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 98
+nmatches after discarding outliers: 35
+nmatchesMap: 35
+SearchLocalPoints SearchByProjection
+matches: 252
+mnMatchesInliers: 89
+mvKeys: 1296
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 239
+nmatches after discarding outliers: 69
+nmatchesMap: 69
+SearchLocalPoints SearchByProjection
+matches: 244
+mnMatchesInliers: 122
+mvKeys: 1295
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 293
+nmatches after discarding outliers: 111
+nmatchesMap: 111
+SearchLocalPoints SearchByProjection
+matches: 320
+mnMatchesInliers: 167
+mvKeys: 1242
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 146
+nmatches after discarding outliers: 93
+nmatchesMap: 93
+SearchLocalPoints SearchByProjection
+matches: 287
+mnMatchesInliers: 129
+mvKeys: 1268
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 107
+nmatches after discarding outliers: 57
+nmatchesMap: 57
+SearchLocalPoints SearchByProjection
+matches: 246
+mnMatchesInliers: 97
+mvKeys: 1258
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 287
+nmatches after discarding outliers: 158
+nmatchesMap: 158
+SearchLocalPoints SearchByProjection
+matches: 269
+mnMatchesInliers: 195
+mvKeys: 1252
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 169
+nmatches after discarding outliers: 102
+nmatchesMap: 102
+SearchLocalPoints SearchByProjection
+matches: 281
+mnMatchesInliers: 146
+mvKeys: 1300
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 122
+nmatches after discarding outliers: 70
+nmatchesMap: 70
+SearchLocalPoints SearchByProjection
+matches: 295
+mnMatchesInliers: 106
+mvKeys: 1222
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 272
+nmatches after discarding outliers: 149
+nmatchesMap: 149
+SearchLocalPoints SearchByProjection
+matches: 277
+mnMatchesInliers: 188
+mvKeys: 1193
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 157
+nmatches after discarding outliers: 90
+nmatchesMap: 90
+SearchLocalPoints SearchByProjection
+matches: 259
+mnMatchesInliers: 137
+mvKeys: 1180
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 110
+nmatches after discarding outliers: 63
+nmatchesMap: 63
+SearchLocalPoints SearchByProjection
+matches: 228
+mnMatchesInliers: 104
+mvKeys: 1202
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 190
+nmatches after discarding outliers: 86
+nmatchesMap: 86
+SearchLocalPoints SearchByProjection
+matches: 192
+mnMatchesInliers: 115
+mvKeys: 1222
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 71
+nmatches after discarding outliers: 40
+nmatchesMap: 40
+SearchLocalPoints SearchByProjection
+matches: 131
+mnMatchesInliers: 78
+mvKeys: 1172
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 251
+nmatches after discarding outliers: 93
+nmatchesMap: 93
+SearchLocalPoints SearchByProjection
+matches: 116
+mnMatchesInliers: 117
+mvKeys: 1092
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 45
+nmatches after discarding outliers: 15
+nmatchesMap: 15
+SearchLocalPoints SearchByProjection
+matches: 76
+mnMatchesInliers: 30
+mvKeys: 1186
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 201
+nmatches after discarding outliers: 57
+nmatchesMap: 57
+SearchLocalPoints SearchByProjection
+matches: 71
+mnMatchesInliers: 74
+mvKeys: 1173
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 173
+nmatches after discarding outliers: 45
+nmatchesMap: 45
+SearchLocalPoints SearchByProjection
+matches: 118
+mnMatchesInliers: 61
+mvKeys: 1166
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 181
+nmatches after discarding outliers: 39
+nmatchesMap: 39
+SearchLocalPoints SearchByProjection
+matches: 177
+mnMatchesInliers: 69
+mvKeys: 1202
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 203
+nmatches after discarding outliers: 57
+nmatchesMap: 57
+SearchLocalPoints SearchByProjection
+matches: 131
+mnMatchesInliers: 70
+mvKeys: 1169
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 110
+nmatches after discarding outliers: 28
+nmatchesMap: 28
+SearchLocalPoints SearchByProjection
+matches: 131
+mnMatchesInliers: 51
+mvKeys: 1268
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 163
+nmatches after discarding outliers: 45
+nmatchesMap: 45
+SearchLocalPoints SearchByProjection
+matches: 119
+mnMatchesInliers: 65
+mvKeys: 1237
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 173
+nmatches after discarding outliers: 67
+nmatchesMap: 67
+SearchLocalPoints SearchByProjection
+matches: 126
+mnMatchesInliers: 91
+mvKeys: 1142
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 169
+nmatches after discarding outliers: 63
+nmatchesMap: 63
+SearchLocalPoints SearchByProjection
+matches: 128
+mnMatchesInliers: 87
+mvKeys: 1223
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 174
+nmatches after discarding outliers: 48
+nmatchesMap: 48
+SearchLocalPoints SearchByProjection
+matches: 125
+mnMatchesInliers: 64
+mvKeys: 1097
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 120
+nmatches after discarding outliers: 30
+nmatchesMap: 30
+SearchLocalPoints SearchByProjection
+matches: 148
+mnMatchesInliers: 32
+mvKeys: 1072
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 144
+nmatches after discarding outliers: 57
+nmatchesMap: 57
+SearchLocalPoints SearchByProjection
+matches: 113
+mnMatchesInliers: 59
+mvKeys: 1131
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 83
+nmatches after discarding outliers: 34
+nmatchesMap: 34
+SearchLocalPoints SearchByProjection
+matches: 104
+mnMatchesInliers: 44
+mvKeys: 1157
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 121
+nmatches after discarding outliers: 46
+nmatchesMap: 46
+SearchLocalPoints SearchByProjection
+matches: 81
+mnMatchesInliers: 57
+mvKeys: 1138
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 126
+nmatches after discarding outliers: 51
+nmatchesMap: 51
+SearchLocalPoints SearchByProjection
+matches: 81
+mnMatchesInliers: 60
+mvKeys: 1127
+TRACK: Track with motion model
+TrackWithMotionModel SearchByProjection
+nmatches: 106
+nmatches after discarding outliers: 23
+nmatchesMap: 23
+SearchLocalPoints SearchByProjection
+matches: 60
+mnMatchesInliers: 28
+Fail to track local map!
+mvKeys: 1094
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 13 i: 0
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 1
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 2
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 3
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 4
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 6
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 7
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 8
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 9
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 10
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 11
+SearchByBoW 1
+nmatches: 1
+Relocalization SearchByBoW. nKFs: 13 i: 12
+SearchByBoW 1
+nmatches: 1
+Fail to track local map!
+mvKeys: 1111
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 13 i: 0
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 1
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 2
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 3
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 4
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 6
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 7
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 8
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 9
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 10
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 11
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 12
+SearchByBoW 1
+nmatches: 0
+Fail to track local map!
+mvKeys: 1057
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 10 i: 0
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 10 i: 1
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 10 i: 2
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 10 i: 3
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 10 i: 4
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 10 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 10 i: 6
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 10 i: 7
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 10 i: 8
+SearchByBoW 1
+nmatches: 53
+Relocalization SearchByBoW. nKFs: 10 i: 9
+SearchByBoW 1
+nmatches: 0
+PoseOptimization
+nGood: 25
+Relocalization SearchByProjection. th: 10 dist_high: 1.2
+nadditional: 273
+Relocalized!!
+SearchLocalPoints SearchByProjection
+matches: 26
+mnMatchesInliers: 77
+mvKeys: 1101
+TRACK: Track with respect to the reference KF
+TrackReferenceKeyFrame SearchByBoW
+SearchByBoW 1
+matches: 41
+nmatchesMap: 33
+SearchLocalPoints SearchByProjection
+matches: 114
+mnMatchesInliers: 40
+Fail to track local map!
+mvKeys: 1116
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 13 i: 0
+SearchByBoW 1
+nmatches: 1
+Relocalization SearchByBoW. nKFs: 13 i: 1
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 2
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 3
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 4
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 6
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 7
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 8
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 9
+SearchByBoW 1
+nmatches: 2
+Relocalization SearchByBoW. nKFs: 13 i: 10
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 11
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 12
+SearchByBoW 1
+nmatches: 23
+PoseOptimization
+nGood: 18
+Relocalization SearchByProjection. th: 10 dist_high: 1.2
+nadditional: 306
+Relocalized!!
+SearchLocalPoints SearchByProjection
+matches: 63
+mnMatchesInliers: 69
+mvKeys: 1156
+TRACK: Track with respect to the reference KF
+TrackReferenceKeyFrame SearchByBoW
+SearchByBoW 1
+matches: 18
+nmatchesMap: 6
+Fail to track local map!
+mvKeys: 1172
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 9 i: 0
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 9 i: 1
+SearchByBoW 1
+nmatches: 2
+Relocalization SearchByBoW. nKFs: 9 i: 2
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 9 i: 3
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 9 i: 4
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 9 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 9 i: 6
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 9 i: 7
+SearchByBoW 1
+nmatches: 12
+Relocalization SearchByBoW. nKFs: 9 i: 8
+SearchByBoW 1
+nmatches: 3
+Fail to track local map!
+mvKeys: 1156
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 7 i: 0
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 7 i: 1
+SearchByBoW 1
+nmatches: 1
+Relocalization SearchByBoW. nKFs: 7 i: 2
+SearchByBoW 1
+nmatches: 2
+Relocalization SearchByBoW. nKFs: 7 i: 3
+SearchByBoW 1
+nmatches: 30
+Relocalization SearchByBoW. nKFs: 7 i: 4
+SearchByBoW 1
+nmatches: 2
+Relocalization SearchByBoW. nKFs: 7 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 7 i: 6
+SearchByBoW 1
+nmatches: 3
+PoseOptimization
+nGood: 18
+Relocalization SearchByProjection. th: 10 dist_high: 1.2
+nadditional: 308
+Relocalized!!
+SearchLocalPoints SearchByProjection
+matches: 111
+mnMatchesInliers: 46
+Fail to track local map!
+mvKeys: 1174
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 17 i: 0
+SearchByBoW 1
+nmatches: 1
+Relocalization SearchByBoW. nKFs: 17 i: 1
+SearchByBoW 1
+nmatches: 1
+Relocalization SearchByBoW. nKFs: 17 i: 2
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 17 i: 3
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 17 i: 4
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 17 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 17 i: 6
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 17 i: 7
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 17 i: 8
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 17 i: 9
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 17 i: 10
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 17 i: 11
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 17 i: 12
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 17 i: 13
+SearchByBoW 1
+nmatches: 1
+Relocalization SearchByBoW. nKFs: 17 i: 14
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 17 i: 15
+SearchByBoW 1
+nmatches: 9
+Relocalization SearchByBoW. nKFs: 17 i: 16
+SearchByBoW 1
+nmatches: 3
+Fail to track local map!
+mvKeys: 1240
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 11 i: 0
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 11 i: 1
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 11 i: 2
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 11 i: 3
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 11 i: 4
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 11 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 11 i: 6
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 11 i: 7
+SearchByBoW 1
+nmatches: 2
+Relocalization SearchByBoW. nKFs: 11 i: 8
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 11 i: 9
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 11 i: 10
+SearchByBoW 1
+nmatches: 1
+Fail to track local map!
+mvKeys: 1172
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 13 i: 0
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 1
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 2
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 3
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 4
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 6
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 7
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 8
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 9
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 10
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 11
+SearchByBoW 1
+nmatches: 4
+Relocalization SearchByBoW. nKFs: 13 i: 12
+SearchByBoW 1
+nmatches: 0
+Fail to track local map!
+mvKeys: 1187
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 14 i: 0
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 1
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 2
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 3
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 4
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 6
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 7
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 8
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 9
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 10
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 11
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 12
+SearchByBoW 1
+nmatches: 2
+Relocalization SearchByBoW. nKFs: 14 i: 13
+SearchByBoW 1
+nmatches: 5
+Fail to track local map!
+mvKeys: 1208
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 14 i: 0
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 1
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 2
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 3
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 4
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 6
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 7
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 8
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 9
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 10
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 11
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 12
+SearchByBoW 1
+nmatches: 2
+Relocalization SearchByBoW. nKFs: 14 i: 13
+SearchByBoW 1
+nmatches: 1
+Fail to track local map!
+mvKeys: 1189
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 16 i: 0
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 16 i: 1
+SearchByBoW 1
+nmatches: 1
+Relocalization SearchByBoW. nKFs: 16 i: 2
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 16 i: 3
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 16 i: 4
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 16 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 16 i: 6
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 16 i: 7
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 16 i: 8
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 16 i: 9
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 16 i: 10
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 16 i: 11
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 16 i: 12
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 16 i: 13
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 16 i: 14
+SearchByBoW 1
+nmatches: 5
+Relocalization SearchByBoW. nKFs: 16 i: 15
+SearchByBoW 1
+nmatches: 2
+Fail to track local map!
+mvKeys: 1209
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 14 i: 0
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 1
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 2
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 3
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 4
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 6
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 7
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 8
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 9
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 10
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 14 i: 11
+SearchByBoW 1
+nmatches: 1
+Relocalization SearchByBoW. nKFs: 14 i: 12
+SearchByBoW 1
+nmatches: 6
+Relocalization SearchByBoW. nKFs: 14 i: 13
+SearchByBoW 1
+nmatches: 0
+Fail to track local map!
+mvKeys: 1181
+Lost for a short time
+Relocalization SearchByBoW. nKFs: 13 i: 0
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 1
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 2
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 3
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 4
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 5
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 6
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 7
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 8
+SearchByBoW 1
+nmatches: 0
+Relocalization SearchByBoW. nKFs: 13 i: 9
+SearchByBoW 1

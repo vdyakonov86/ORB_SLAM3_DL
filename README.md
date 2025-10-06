@@ -1,35 +1,96 @@
-Evaluation:
-python evaluation/evaluate_ate_scale.py evaluation/Ground_truth/TUM_rgbd/fr3_sitting_xyz.txt /orbslam3_dl/ws/src/ORB_SLAM3/CameraTraj_fr3_sitting_xyz.txt --plot=true --verbose
+# Evaluation
+## Evaluation ORB:
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_sitting_xyz.txt /orbslam3_dl/ws/evaluation/fr3_sitting_xyz_orb/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_sitting_xyz_orb --verbose 
 
-python evaluation/evaluate_ate_scale.py evaluation/Ground_truth/TUM_rgbd/fr3_walking_xyz.txt /orbslam3_dl/ws/src/ORB_SLAM3/CameraTraj_fr3_walking_xyz.txt --plot=true --verbose
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_walking_xyz.txt /orbslam3_dl/ws/evaluation/fr3_walking_xyz_orb/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_walking_xyz_orb --verbose 
 
-python evaluation/evaluate_ate_scale.py evaluation/Ground_truth/TUM_rgbd/fr3_walking_rpy.txt /orbslam3_dl/ws/src/ORB_SLAM3/CameraTraj_fr3_walking_rpy.txt --plot=true --verbose
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_walking_rpy.txt /orbslam3_dl/ws/evaluation/fr3_walking_rpy_orb/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_walking_rpy_orb --verbose 
 
-Association:
-python src/python/associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt --outpath PATH_TO_SEQUENCE --outfile FILENAME
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_walking_static.txt /orbslam3_dl/ws/evaluation/fr3_walking_static_orb/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_walking_static_orb --verbose 
 
-python evaluation/associate.py /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_sitting_xyz/rgb.txt /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_sitting_xyz/depth.txt --outpath ./Examples/RGB-D/associations/ --outfile fr3_sitting_xyz.txt
+## Evaluation SuperPoint:
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_sitting_xyz.txt /orbslam3_dl/ws/evaluation/fr3_sitting_xyz_superpoint/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_sitting_xyz_superpoint --verbose 
 
-python evaluation/associate.py /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_xyz/rgb.txt /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_xyz/depth.txt --outpath ./Examples/RGB-D/associations/ --outfile fr3_walking_xyz.txt
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_walking_xyz.txt /orbslam3_dl/ws/evaluation/fr3_walking_xyz_superpoint/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_walking_xyz_superpoint --verbose 
 
-python evaluation/associate.py /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_rpy/rgb.txt /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_rpy/depth.txt --outpath ./Examples/RGB-D/associations/ --outfile fr3_walking_rpy.txt
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_walking_rpy.txt /orbslam3_dl/ws/evaluation/fr3_walking_rpy_superpoint/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_walking_rpy_superpoint --verbose 
 
-Run examples
-Stereo:
-./Examples/Stereo/stereo_euroc ./Vocabulary/ORBvoc.txt ./Examples/Stereo/EuRoC.yaml /Datasets/EuRoC/MH01 ./Examples/Stereo/EuRoC_TimeStamps/MH01.txt
-./Examples/Stereo/stereo_kitti ./Vocabulary/ORBvoc.txt ./Examples/Stereo/KITTI00-02.yaml ~/Datasets/Kitti/00
-./Examples/Stereo/stereo_kitti ./Vocabulary/ORBvoc.txt ./Examples/Stereo/Nuance.yaml ~/Datasets/Nuance/00
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_walking_static.txt /orbslam3_dl/ws/evaluation/fr3_walking_static_superpoint/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_walking_static_superpoint --verbose 
 
-RGBD:
-./Examples/RGB-D/rgbd_tum ./Vocabulary/ORBvoc.txt ./Examples/RGB-D/TUM1.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_sitting_xyz ./Examples/RGB-D/associations/fr3_sitting_xyz.txt fr3_sitting_xyz
+## Evaluation SuperPoint+SuperGlue:
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_sitting_xyz.txt /orbslam3_dl/ws/evaluation/fr3_sitting_xyz_superpoint_superglue/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_sitting_xyz_superpoint_superglue --verbose 
 
-./Examples/RGB-D/rgbd_tum ./Vocabulary/ORBvoc.txt ./Examples/RGB-D/TUM1.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_xyz ./Examples/RGB-D/associations/fr3_walking_xyz.txt fr3_walking_xyz
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_walking_xyz.txt /orbslam3_dl/ws/evaluation/fr3_walking_xyz_superpoint_superglue/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_walking_xyz_superpoint_superglue --verbose 
 
-./Examples/RGB-D/rgbd_tum ./Vocabulary/ORBvoc.txt ./Examples/RGB-D/TUM1.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_rpy ./Examples/RGB-D/associations/fr3_walking_rpy.txt fr3_walking_rpy
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_walking_rpy.txt /orbslam3_dl/ws/evaluation/fr3_walking_rpy_superpoint_superglue/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_walking_rpy_superpoint_superglue --verbose 
 
-RGBD with yolo:
-./Examples/RGB-D/rgbd_tum_yolo ./Vocabulary/ORBvoc.txt ./Examples/RGB-D/TUM1.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_sitting_xyz ./Examples/RGB-D/associations/fr3_sitting_xyz.txt 2 2 6 0 0 /orbslam3_dl/ws/src/yolo-inference/weights/yolov11n_seg_fp32.onnx fr3_sitting_xyz
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_walking_static.txt /orbslam3_dl/ws/evaluation/fr3_walking_static_superpoint_superglue/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_walking_static_superpoint_superglue --verbose 
 
-./Examples/RGB-D/rgbd_tum_yolo ./Vocabulary/ORBvoc.txt ./Examples/RGB-D/TUM1.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_xyz ./Examples/RGB-D/associations/fr3_walking_xyz.txt 2 2 6 0 0 /orbslam3_dl/ws/src/yolo-inference/weights/yolov11n_seg_fp32.onnx fr3_walking_xyz
+## Evaluation SuperPoint+hybrid:
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_sitting_xyz.txt /orbslam3_dl/ws/evaluation/fr3_sitting_xyz_superpoint_hybrid/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_sitting_xyz_superpoint_hybrid --verbose 
 
-./Examples/RGB-D/rgbd_tum_yolo ./Vocabulary/ORBvoc.txt ./Examples/RGB-D/TUM1.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_rpy ./Examples/RGB-D/associations/fr3_walking_rpy.txt 2 2 6 0 0 /orbslam3_dl/ws/src/yolo-inference/weights/yolov11n_seg_fp32.onnx fr3_walking_rpy
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_walking_xyz.txt /orbslam3_dl/ws/evaluation/fr3_walking_xyz_superpoint_hybrid/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_walking_xyz_superpoint_hybrid --verbose 
+
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_walking_rpy.txt /orbslam3_dl/ws/evaluation/fr3_walking_rpy_superpoint_hybrid/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_walking_rpy_superpoint_hybrid --verbose 
+
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/evaluate_ate_scale.py /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/Ground_truth/TUM_rgbd/fr3_walking_static.txt /orbslam3_dl/ws/evaluation/fr3_walking_static_superpoint_hybrid/CameraTraj.txt --save_dir=/orbslam3_dl/ws/evaluation/fr3_walking_static_superpoint_hybrid --verbose 
+
+# Association:
+python3 src/python/associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt --outpath PATH_TO_SEQUENCE --outfile FILENAME
+
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/associate.py /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_sitting_xyz/rgb.txt /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_sitting_xyz/depth.txt --outpath /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/ --outfile fr3_sitting_xyz.txt
+
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/associate.py /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_xyz/rgb.txt /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_xyz/depth.txt --outpath /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/ --outfile fr3_walking_xyz.txt
+
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/associate.py /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_rpy/rgb.txt /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_rpy/depth.txt --outpath /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/ --outfile fr3_walking_rpy.txt
+
+python3 /orbslam3_dl/ws/src/ORB_SLAM3/evaluation/associate.py /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_static/rgb.txt /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_static/depth.txt --outpath /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/ --outfile fr3_walking_static.txt
+
+# Run examples
+## Stereo:
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/Stereo/stereo_euroc /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/ORBvoc.txt /orbslam3_dl/ws/src/ORB_SLAM3/Examples/Stereo/EuRoC.yaml /Datasets/EuRoC/MH01 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/Stereo/EuRoC_TimeStamps/MH01.txt
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/Stereo/stereo_kitti /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/ORBvoc.txt /orbslam3_dl/ws/src/ORB_SLAM3/Examples/Stereo/KITTI00-02.yaml ~/Datasets/Kitti/00
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/Stereo/stereo_kitti /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/ORBvoc.txt /orbslam3_dl/ws/src/ORB_SLAM3/Examples/Stereo/Nuance.yaml ~/Datasets/Nuance/00
+
+## RGBD ORB:
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/orb_voc_4seasons_k9_L3 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM1.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_sitting_xyz /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_sitting_xyz.txt /orbslam3_dl/ws/evaluation/fr3_sitting_xyz_orb/ ORB ORB 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_sitting_xyz_orb/logs.txt
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/ORBvoc.txt /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM1.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_xyz /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_xyz.txt /orbslam3_dl/ws/evaluation/fr3_walking_xyz_orb/ ORB ORB 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_walking_xyz_orb/logs.txt
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/ORBvoc.txt /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM1.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_rpy /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_rpy.txt /orbslam3_dl/ws/evaluation/fr3_walking_rpy_orb/ ORB ORB 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_walking_rpy_orb/logs.txt
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/ORBvoc.txt /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM1.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_static /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_static.txt /orbslam3_dl/ws/evaluation/fr3_walking_static_orb/ ORB ORB 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_walking_static_orb/logs.txt
+
+## RGBD SuperPoint:
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/sp_voc_mono_vo_seq04_k9_L3 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM_superpoint.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_sitting_xyz /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_sitting_xyz.txt /orbslam3_dl/ws/evaluation/fr3_sitting_xyz_superpoint/ SUPERPOINT SUPERPOINT 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_sitting_xyz_superpoint/logs.txt
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/sp_voc_mono_vo_seq04_k9_L3 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM_superpoint.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_xyz /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_xyz.txt /orbslam3_dl/ws/evaluation/fr3_walking_xyz_superpoint/ SUPERPOINT SUPERPOINT 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_walking_xyz_superpoint/logs.txt
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/sp_voc_mono_vo_seq04_k9_L3 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM_superpoint.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_rpy /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_rpy.txt /orbslam3_dl/ws/evaluation/fr3_walking_rpy_superpoint/ SUPERPOINT SUPERPOINT 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_walking_rpy_superpoint/logs.txt
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/sp_voc_mono_vo_seq04_k9_L3 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM_superpoint.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_static /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_static.txt /orbslam3_dl/ws/evaluation/fr3_walking_static_superpoint/ SUPERPOINT SUPERPOINT 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_walking_static_superpoint/logs.txt
+
+## RGBD SuperPoint+SuperGlue:
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/sp_voc_mono_vo_seq04_k9_L3 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM_superpoint.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_sitting_xyz /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_sitting_xyz.txt /orbslam3_dl/ws/evaluation/fr3_sitting_xyz_superpoint_superglue/ SUPERPOINT SUPERGLUE 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_sitting_xyz_superpoint_superglue/logs.txt
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/sp_voc_mono_vo_seq04_k9_L3 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM_superpoint.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_xyz /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_xyz.txt /orbslam3_dl/ws/evaluation/fr3_walking_xyz_superpoint_superglue/ SUPERPOINT SUPERGLUE 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_walking_xyz_superpoint_superglue/logs.txt
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/sp_voc_mono_vo_seq04_k9_L3 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM_superpoint.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_rpy /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_rpy.txt /orbslam3_dl/ws/evaluation/fr3_walking_rpy_superpoint_superglue/ SUPERPOINT SUPERGLUE 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_walking_rpy_superpoint_superglue/logs.txt
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/sp_voc_mono_vo_seq04_k9_L3 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM_superpoint.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_static /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_static.txt /orbslam3_dl/ws/evaluation/fr3_walking_static_superpoint_superglue/ SUPERPOINT SUPERGLUE 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_walking_static_superpoint_superglue/logs.txt
+
+## RGBD SuperPoint+hybrid:
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/sp_voc_mono_vo_seq04_k9_L3 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM_superpoint.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_sitting_xyz /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_sitting_xyz.txt /orbslam3_dl/ws/evaluation/fr3_sitting_xyz_superpoint_hybrid/ SUPERPOINT HYBRID  2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_sitting_xyz_superpoint_hybrid/logs.txt
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/sp_voc_mono_vo_seq04_k9_L3 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM_superpoint.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_xyz /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_xyz.txt /orbslam3_dl/ws/evaluation/fr3_walking_xyz_superpoint_hybrid/ SUPERPOINT HYBRID 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_walking_xyz_superpoint_hybrid/logs.txt
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/sp_voc_mono_vo_seq04_k9_L3 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM_superpoint.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_rpy /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_rpy.txt /orbslam3_dl/ws/evaluation/fr3_walking_rpy_superpoint_hybrid/ SUPERPOINT HYBRID 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_walking_rpy_superpoint_hybrid/logs.txt
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/sp_voc_mono_vo_seq04_k9_L3 /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM_superpoint.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_static /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_static.txt /orbslam3_dl/ws/evaluation/fr3_walking_static_superpoint_hybrid/ SUPERPOINT HYBRID 2>&1 | tee /orbslam3_dl/ws/evaluation/fr3_walking_static_superpoint_hybrid/logs.txt
+
+## RGBD with yolo:
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum_yolo /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/ORBvoc.txt /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM1.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_sitting_xyz /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_sitting_xyz.txt 2 2 6 0 0 /orbslam3_dl/ws/src/yolo-inference/weights/yolov11n_seg_fp32.onnx fr3_sitting_xyz
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum_yolo /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/ORBvoc.txt /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM1.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_xyz /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_xyz.txt 2 2 6 0 0 /orbslam3_dl/ws/src/yolo-inference/weights/yolov11n_seg_fp32.onnx fr3_walking_xyz
+
+/orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/rgbd_tum_yolo /orbslam3_dl/ws/src/ORB_SLAM3/Vocabulary/ORBvoc.txt /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/TUM1.yaml /orbslam3_dl/datasets/TUM/rgbd_dataset_freiburg3_walking_rpy /orbslam3_dl/ws/src/ORB_SLAM3/Examples/RGB-D/associations/fr3_walking_rpy.txt 2 2 6 0 0 /orbslam3_dl/ws/src/yolo-inference/weights/yolov11n_seg_fp32.onnx fr3_walking_rpy
